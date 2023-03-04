@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign UP</title>
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="index.html">
+          <img src="imgs/logo-dark.png" class="logo" style="margin-top: -1px" />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">contact</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <div class="d-flex align-items-center">
+            <a href="login.html" class="btn btn-outline-dark btn-lg me-3"
+              >Login</a
+            >
+            <a href="signup.html" class="btn btn-outline-dark btn-lg">
+              Sign up for free
+            </a>
+          </div>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div
+              class="card bg-dark text-white shadow-2-strong card-registration"
+              style="border-radius: 15px"
+            >
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Sign UP</h3>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline form-white">
+                        <input
+                          type="text"
+                          id="firstName"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="firstName"
+                          >First Name</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline form-white">
+                        <input
+                          type="text"
+                          id="lastName"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="lastName"
+                          >Last Name</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                      <div class="form-outline datepicker w-100 form-white">
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          id="birthdayDate"
+                        />
+                        <label for="birthdayDate" class="form-label"
+                          >Birthday</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <h6 class="mb-2 pb-1">Gender:</h6>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="maleGender"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="maleGender"
+                          >Male</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="femaleGender"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="femaleGender"
+                          >Female</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="otherGender"
+                          value="option3"
+                        />
+                        <label class="form-check-label" for="otherGender"
+                          >Other</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input
+                          type="email"
+                          id="emailAddress"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="emailAddress"
+                          >Email</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input
+                          type="tel"
+                          id="phoneNumber"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="phoneNumber"
+                          >Phone Number</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <select class="select form-control-lg form-white">
+                        <option value="1" disabled>Choose option</option>
+                        <option value="2">Subject 1</option>
+                        <option value="3">Subject 2</option>
+                        <option value="4">Subject 3</option>
+                      </select>
+                      <label class="form-label select-label text-white"
+                        >Choose option</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2">
+                    <input
+                      class="btn btn-outline-light btn-lg px-5"
+                      type="submit"
+                      value="Submit"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const form = document.querySelector("form");
+      const password = document.querySelector("#password");
+      const confirm_password = document.querySelector("#confirm-password");
+      const error_message = document.createElement("div");
+      confirm_password.addEventListener("input", () => {
+        if (confirm_password.value !== password.value) {
+          error_message.textContent = "Passwords do not match.";
+          error_message.className = "alert alert alert-danger";
+          confirm_password.after(error_message);
+        } else {
+          error_message.remove();
+        }
+      });
+      form.addEventListener("submit", (e) => {
+        if (confirm_password.value !== password.value) {
+          e.preventDefault();
+          error_message.textContent = "Passwords do not match.";
+          confirm_password.after(error_message);
+        }
+      });
+    </script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
